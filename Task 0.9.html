@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Task 0.9 answers</title>
+ </head>
+ 
+ <h1>Level 0 coding challenges </h1>
+
+ <body>
+	<p><b>Task 0.9 answer</b></p>
+	<p id="Vowels"></p>
+	<p id="Vowels1"></p>
+
+	<!-- Javascripts, normally I'd put this in a seperate script -->	
+	<script type="text/javascript">
+		//---------------------------------------------
+		function PrintVowels(str)
+		{
+			var vowel = "aeiou";
+			var vfound;
+
+			str.toLowerCase();					//convert to lower case
+			var res = str.match(/[aeiou]/ig);	//check for vowel in string
+		    
+			res = [...new Set(res)];			//remove duplicates chars
+
+			if (res.length != 0)
+			{
+				document.getElementById("Vowels").innerHTML = res;
+			}
+		}
+
+		//---------------------------------------------
+		PrintVowels("umuzi");			// Task 0.9
+		PrintVowels("This is a long sentence"); //Task 0.9
+
+	</script>  
+  </body>
+</html>

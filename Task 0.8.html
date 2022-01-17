@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Task 0.8 answers</title>
+ </head>
+ 
+ <h1>Level 0 coding challenges </h1>
+
+ <body>
+	<p><b>Task 0.8 answer</b></p>
+	<p id="Time"></p>
+
+	<!-- Javascripts, normally I'd put this in a seperate script -->	
+	//-------------------------------------------
+	<script type="text/javascript">
+		function format (fmtstr) {
+			var args = Array.prototype.slice.call(arguments, 1);
+			return fmtstr.replace(/\{(\d+)\}/g, function (match, index) {
+			return args[index];
+			});
+		}
+
+		//---------------------------------------------
+		function Number2Time(num)
+		{
+
+		    var hours    = Math.round(num/60);
+			var minutes  = Math.round(num%60);
+			var min_text = "minute";
+			var hr_text  = "hour";
+			var str;
+
+		    if (hours >= 2)
+			    hr_text = "hours";
+		    if (minutes >= 2)
+			    min_text = "minutes";
+
+			str = format('{0} {1}, {2} {3}', hours, hr_text, minutes, min_text);
+		    document.getElementById("Time").innerHTML = str;
+
+		}
+		//---------------------------------------------
+		Number2Time(133);				// Task 0.8
+
+	</script>  
+  </body>
+</html>
