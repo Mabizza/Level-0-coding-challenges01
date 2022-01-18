@@ -11,5 +11,5 @@ function convertFahrenheitToCelsius(degree)
     console.log(result);
 }
 //---------------------------------------------
-ConvertCelsiusToFahrenheit(0);
-ConvertFahrenheitToCelsius(32);
+convertCelsiusToFahrenheit(0);
+convertFahrenheitToCelsius(32);
