@@ -1,7 +1,6 @@
 function printVowels(str)
 {
     let vowel = "aeiou";
-    let vfound;
 
     str.toLowerCase();
     let res = str.match(/[aeiou]/ig);
