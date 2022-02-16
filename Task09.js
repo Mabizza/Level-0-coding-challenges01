@@ -1,4 +1,4 @@
-function PrintVowels(str)
+function printVowels(str)
 {
     let vowel = "aeiou";
     let vfound;
@@ -15,5 +15,5 @@ function PrintVowels(str)
 }
 
 //---------------------------------------------
-PrintVowels("umuzi");
-PrintVowels("This is a long sentence"); 
+printVowels("umuzi");
+printVowels("This is a long sentence"); 
