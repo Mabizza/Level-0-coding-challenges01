@@ -1,7 +1,10 @@
 function triangleCalc(a, b, c)
 {
-   let area = (a + b + c)/2 ; 
-   console.log(area);
+   let side = (a + b + c)/2 ; 
+   triangle = (side * (side-a)*(side-b)*(side-c));
+   return (Math.sqrt( triangle ));
 }
- //---------------------------------------------
- triangleCalc(4,7, 9);
+
+let area = triangleCalc(4,7, 9);
+console.log(area.toFixed(2));
+ 
