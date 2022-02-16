@@ -15,4 +15,4 @@ function printVowels(str)
 
 //---------------------------------------------
 printVowels("umuzi");
-printVowels("This is a long sentence"); 
+printVowels("This is a long sentence");
