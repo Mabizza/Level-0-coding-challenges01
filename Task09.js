@@ -1,18 +1,16 @@
-function printVowels(str)
-{
-    let vowel = "aeiou";
+function printVowels(str) {
+	let vowel = "aeiou";
 
-    str.toLowerCase();
-    let res = str.match(/[aeiou]/ig);
-    
-    res = [...new Set(res)];
+	str.toLowerCase();
+	let res = str.match(/[aeiou]/gi);
 
-    if (res.length != 0)
-    {
-        console.log(res);
-    }
+	res = [...new Set(res)];
+
+	if (res.length != 0) {
+		//arr.join(", "));
+		console.log(res.join(", "));
+	}
 }
 
-//---------------------------------------------
 printVowels("umuzi");
 printVowels("This is a long sentence");
