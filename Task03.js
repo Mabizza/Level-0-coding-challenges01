@@ -1,6 +1,4 @@
-function hello(name)
-{
-    screenPrint = "Hello " + name + "!";
-    console.log(screenPrint);
+function hello(name) {
+	console.log(`Hello ${name}!`);
 }
 hello("Tsepho");
