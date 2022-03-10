@@ -1,22 +1,20 @@
-function format(fmtstr) {
-	let args = Array.prototype.slice.call(arguments, 1);
-	return fmtstr.replace(/\{(\d+)\}/g, function (match, index) {
+function format(fmtStr) {
+	const args = Array.prototype.slice.call(arguments, 1);
+	return fmtStr.replace(/\{(\d+)\}/g, function (match, index) {
 		return args[index];
 	});
 }
 
-//---------------------------------------------
 function number2Time(num) {
-	let hours = Math.round(num / 60);
-	let minutes = Math.round(num % 60);
-	let min_text = "minute";
-	let hr_text = "hour";
+	const hours = Math.round(num / 60);
+	const minutes = Math.round(num % 60);
+	let minText = "minute";
+	let hrText = "hour";
 
-	if (hours >= 2) hr_text = "hours";
-	if (minutes >= 2) min_text = "minutes";
+	if (hours >= 2) hrText = "hours";
+	if (minutes >= 2) minText = "minutes";
 
-	let str = format("{0} {1}, {2} {3}", hours, hr_text, minutes, min_text);
+	const str = format("{0} {1}, {2} {3}", hours, hrText, minutes, minText);
 	console.log(str);
 }
-//---------------------------------------------
 number2Time(133);
